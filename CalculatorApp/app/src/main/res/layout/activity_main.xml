@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8E3F2"
+    android:padding="16dp">
+
+    <!-- Display TextView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#EDF2FA">
+
+        <TextView
+            android:id="@+id/textViewDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|center_vertical"
+            android:padding="24dp"
+            android:text="0"
+            android:textSize="36sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Buttons Grid -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:useDefaultMargins="true">
+
+        <!-- Row 1 -->
+        <Button
+            android:id="@+id/btn_clear"
+            style="@style/GlassButton"
+            android:text="AC" />
+
+        <Button
+            android:id="@+id/btn_del"
+            style="@style/GlassButton"
+            android:text="Del" />
+
+        <Button
+            android:id="@+id/btn_percent"
+            style="@style/GlassButton"
+            android:text="%" />
+
+        <Button
+            android:id="@+id/btn_div"
+            style="@style/GlassButton"
+            android:text="÷" />
+
+        <!-- Row 2 -->
+        <Button
+            android:id="@+id/btn_7"
+            style="@style/GlassButton"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn_8"
+            style="@style/GlassButton"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn_9"
+            style="@style/GlassButton"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btn_mul"
+            style="@style/GlassButton"
+            android:text="×" />
+
+        <!-- Row 3 -->
+        <Button
+            android:id="@+id/btn_4"
+            style="@style/GlassButton"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn_5"
+            style="@style/GlassButton"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn_6"
+            style="@style/GlassButton"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btn_sub"
+            style="@style/GlassButton"
+            android:text="-" />
+
+        <!-- Row 4 -->
+        <Button
+            android:id="@+id/btn_1"
+            style="@style/GlassButton"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn_2"
+            style="@style/GlassButton"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn_3"
+            style="@style/GlassButton"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btn_add"
+            style="@style/GlassButton"
+            android:text="+" />
+
+        <!-- Row 5 -->
+        <Button
+            android:id="@+id/btn_0"
+            style="@style/GlassButton"
+            android:layout_columnSpan="2"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btn_dot"
+            style="@style/GlassButton"
+            android:text="." />
+
+        <Button
+            android:id="@+id/btn_equal"
+            style="@style/GlassButton"
+            android:text="=" />
+    </GridLayout>
+</LinearLayout>

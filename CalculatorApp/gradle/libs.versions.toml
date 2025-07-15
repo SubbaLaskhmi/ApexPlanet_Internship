@@ -1,0 +1,24 @@
+[versions]
+agp = "8.10.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.1"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+kotlin = "1.8.10"
+
+
+[libraries]
+appcompat = "androidx.appcompat:appcompat:1.6.1"
+material = "com.google.android.material:material:1.9.0"
+activity = "androidx.activity:activity:1.7.2"
+constraintlayout = "androidx.constraintlayout:constraintlayout:2.1.4"
+junit = "junit:junit:4.13.2"
+ext-junit = "androidx.test.ext:junit:1.1.5"
+espresso-core = "androidx.test.espresso:espresso-core:3.5.1"
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+
